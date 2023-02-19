@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageButton
+        android:id="@+id/closeDialog"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/in" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uploaded Image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:textSize="26sp"
+        android:id="@+id/uploadImageText1"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/chooseImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/uploadImageText1"
+        android:layout_centerHorizontal="true"
+        android:src="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/choiceLayout"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="9dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseImage"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <RelativeLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:padding="7dp"
+            android:background="@drawable/rectangle_2">
+            <TextView
+                android:id="@+id/orignalTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orignal"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rectangle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:padding="7dp"
+            android:background="@drawable/rectangle_2">
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_image_frame_1"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:padding="7dp"
+            android:background="@drawable/rectangle_2">
+            <ImageView
+                android:id="@+id/square"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_image_frame_2"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectangle_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:padding="7dp"
+            android:background="@drawable/rectangle_2">
+            <ImageView
+                android:id="@+id/oval"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_image_frame_3"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rectangle_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:padding="7dp"
+            android:background="@drawable/rectangle_2">
+            <ImageView
+                android:id="@+id/rect"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_image_frame_4"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/choiceDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use this Image"
+        android:layout_below="@id/choiceLayout"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
